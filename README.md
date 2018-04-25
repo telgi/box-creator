@@ -32,3 +32,4 @@ Run `rspec`
 10) Improve spacing for horizontal characters to make box closer to a square shape rather than rectangle [X]
 11) Improve spacing for vertical characters so it is clear that the inputted height matches the height of the output box [X]
 12) Edge case coverage - make sure only an integer is passed through as an argument for width or height [X]
+13) Change edge case messages to guard clauses that throw errors when violated [X]
