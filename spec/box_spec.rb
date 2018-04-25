@@ -10,8 +10,8 @@ describe Box do
   end
 
   describe '#create_middle' do
-    it 'prints out the middle part of a box according to the width provided' do
-      expect { box.create_middle(3) }.to output("│   │\n").to_stdout
+    it 'prints out the middle part of a box according to the width and height provided' do
+      expect { box.create_middle(3, 4) }.to output("│   │\n│   │\n").to_stdout
     end
   end
 
@@ -22,8 +22,8 @@ describe Box do
   end
 
   describe '#create_box' do
-    it 'prints a complete box with a height of 3 and any width' do
-      expect { box.create_box(3) }.to output("┌ - ┐\n│   │\n└ - ┘").to_stdout
+    it 'prints a complete box according to width and height provided' do
+      expect { box.create_box(4, 4) }.to output("┌ -- ┐\n│    │\n│    │\n└ -- ┘").to_stdout
     end
   end
 end

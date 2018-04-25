@@ -27,3 +27,4 @@ Run `rspec`
 5) Create a main method for building a whole box, using the `#create_top` and `#create_bottom` methods [X]
 6) Add an argument for width to increase the width of the box [X]
 7) Create a method for the middle part of the box to build a box with a pre-determined height of 3 [X]
+8) Modify `#create_middle` to be flexible, accepting an argument of height [X]
