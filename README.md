@@ -14,6 +14,17 @@ box in the console like so:
 
 Run `git clone git@github.com:telgi/box-creator.git` in your local machine
 
+## Usage
+
+1) Run `ruby app.rb`
+
+2) Run `irb`
+
+```
+box = Box.new
+box.create(w, h)
+```
+
 ## Running Tests
 
 Run `rspec`
@@ -34,3 +45,4 @@ Run `rspec`
 12) Edge case coverage - make sure only an integer is passed through as an argument for width or height [X]
 13) Change edge case messages to guard clauses that throw errors when violated [X]
 14) Refactor tests and application code [X]
+15) Add user interaction in the console to grab input and use that input to create a box [X]

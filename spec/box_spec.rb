@@ -17,13 +17,13 @@ describe Box do
 
   describe '#create_bottom' do
     it 'prints out bottom part of box according to width provided' do
-      expect { box.create_bottom(4) }.to output('└    -    -    ┘').to_stdout
+      expect { box.create_bottom(4) }.to output("└    -    -    ┘\n").to_stdout
     end
   end
 
   describe '#create_box' do
     it 'prints a complete box according to width and height provided' do
-      box_art = "┌    -    -    ┐\n\n│              │\n\n│              │\n\n└    -    -    ┘"
+      box_art = "┌    -    -    ┐\n\n│              │\n\n│              │\n\n└    -    -    ┘\n"
       expect { box.create(4, 4) }.to output(box_art).to_stdout
     end
 

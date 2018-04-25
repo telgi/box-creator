@@ -1,4 +1,9 @@
 class Box
+  def launch!
+    introduction
+    get_user_input
+  end
+
   def create(w, h)
     validation(w, h)
     build(w, h)
@@ -20,7 +25,7 @@ class Box
   end
 
   def create_bottom(w)
-    print "\u2514  #{('  ' + 45.chr + '  ') * (w - 2)}  \u2518"
+    puts "\u2514  #{('  ' + 45.chr + '  ') * (w - 2)}  \u2518"
   end
 
   def validation(w, h)
@@ -36,5 +41,41 @@ class Box
 
   def integers?(w, h)
     (w.is_a? Integer) && (h.is_a? Integer)
+  end
+
+  def get_user_input
+    puts "\nPlease select the width of your box:"
+    w = gets.chomp.to_i
+    puts "\nPlease select the height of your box:\n"
+    h = gets.chomp.to_i
+    output_box(w, h)
+  end
+
+  def output_box(w, h)
+    puts "Here's your beautiful box: #{w} width by #{h} height"
+    create(w, h)
+    repeat_user_input
+  end
+
+  def repeat_user_input
+    puts "do you want another box? y / n"
+    repeat(STDIN.gets.chomp.strip.downcase.to_sym)
+  end
+
+  def repeat(selection)
+    case selection
+    when :y then get_user_input
+    when :n then conclusion
+    else puts "Please type 'y' or 'n'"
+    end
+  end
+
+  def introduction
+    puts "Welcome to the Box Creator!"
+  end
+
+  def conclusion
+    puts "\nBye - see you next time you need a box.."
+    exit
   end
 end
