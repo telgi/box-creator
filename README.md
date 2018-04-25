@@ -22,4 +22,5 @@ Run `rspec`
 
 1) Set up RSpec to test-drive development [X]
 2) Research how to print ascii keys in Ruby [X]
-3) Create a method to print out the top part of a box, not accounting for width or height
+3) Create a method to print out the top part of a box, not accounting for width or height [X]
+4) Create a method to print out the bottom part of a box, not accounting for width or height []
