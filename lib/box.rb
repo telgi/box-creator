@@ -1,6 +1,11 @@
 class Box
+  def create_box
+    create_top
+    create_bottom
+  end
+
   def create_top
-    print "\u250C \u2510"
+    puts "\u250C \u2510"
   end
 
   def create_bottom
