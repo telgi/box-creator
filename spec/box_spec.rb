@@ -8,4 +8,10 @@ describe Box do
       expect { box.create_top }.to output('┌ ┐').to_stdout
     end
   end
+
+  describe '#create_bottom' do
+    it 'prints out the bottom part of a box' do
+      expect { box.create_bottom }.to output('└ ┘').to_stdout
+    end
+  end
 end
