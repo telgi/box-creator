@@ -30,3 +30,4 @@ Run `rspec`
 8) Modify `#create_middle` to be flexible, accepting an argument of height [X]
 9) Handle error case for box dimensions that are less than 2x2 (required to build the smallest box) [X]
 10) Improve spacing for horizontal characters to make box closer to a square shape rather than rectangle [X]
+11) Improve spacing for vertical characters so it is clear that the inputted height matches the height of the output box [X]
