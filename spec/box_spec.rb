@@ -29,5 +29,9 @@ describe Box do
     it 'does not allow dimensions less than 2x2' do
       expect { box.create(1, 1) }.to output("You must select dimensions that are greater than or equal to 2x2\n").to_stdout
     end
+
+    it 'does only allows integers to be passed through as arguments for width and height' do
+      expect { box.create(3.7, 4.8) }.to output("You must select dimensions with whole numbers\n").to_stdout
+    end
   end
 end

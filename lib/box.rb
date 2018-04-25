@@ -1,6 +1,8 @@
 class Box
   def create(w, h)
-    if too_small(w, h) == true
+    if is_int(w, h) == false
+      puts "You must select dimensions with whole numbers"
+    elsif too_small(w, h) == true
       puts "You must select dimensions that are greater than or equal to 2x2"
     else
       create_top(w)
@@ -29,5 +31,9 @@ class Box
 
   def too_small(w, h)
     w <= 2 && h <= 2
+  end
+
+  def is_int(w, h)
+    (w.is_a? Integer) && (h.is_a? Integer)
   end
 end
