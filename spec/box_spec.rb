@@ -1,5 +1,11 @@
 require 'box'
 
 describe Box do
-  it { is_expected.to respond_to(:create_top) }
+  let(:box) { described_class.new }
+
+  describe '#create_top' do
+    it 'prints out the top part of a box' do
+      expect { box.create_top }.to output('┌ ┐').to_stdout
+    end
+  end
 end
