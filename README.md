@@ -18,6 +18,8 @@ Run `git clone git@github.com:telgi/box-creator.git` in your local machine
 
 1) Run `ruby app.rb`
 
+*OR*
+
 2) Run `irb`
 
 ```
