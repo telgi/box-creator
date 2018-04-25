@@ -1,6 +1,10 @@
 class Box
   def create(w, h)
     validation(w, h)
+    build(w, h)
+  end
+
+  def build(w, h)
     create_top(w)
     create_middle(w, h)
     create_bottom(w)
@@ -11,10 +15,7 @@ class Box
   end
 
   def create_middle(w, h)
-    (h - 2).times do
-      puts ""
-      puts "\u2502  #{'     ' * (w - 2)}  \u2502"
-    end
+    (h - 2).times { puts "\n\u2502  #{'     ' * (w - 2)}  \u2502" }
     puts ""
   end
 

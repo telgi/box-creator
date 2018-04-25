@@ -33,3 +33,4 @@ Run `rspec`
 11) Improve spacing for vertical characters so it is clear that the inputted height matches the height of the output box [X]
 12) Edge case coverage - make sure only an integer is passed through as an argument for width or height [X]
 13) Change edge case messages to guard clauses that throw errors when violated [X]
+14) Refactor tests and application code [X]
